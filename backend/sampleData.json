@@ -1,0 +1,59 @@
+[
+    {
+        "username": "yh75",
+          "email": "yh75@rice.edu",
+          "dob": "08/31/1996",
+          "headline": "I love express",
+          "zipcode": "77005",
+          "password": "123"
+    },
+    {
+        "text": "post1: I love mongoDB",
+        "author": "yh75",
+        "comments": [{
+            "commentId": "yh750",
+            "author": "yh75",
+            "body": "Why no one is commenting?",
+            "date": 0
+        },
+        {
+            "commentId": "yh751",
+            "author": "yh75",
+            "body": "Don't you all love mongoDB?",
+            "date": 1
+        },
+        {
+            "commentId": "yh752",
+            "author": "yh75",
+            "body": "Or you like mySQL more?",
+            "date": 2
+        }]
+    },
+
+    {
+        "text": "post2: I love mongoDB",
+        "author": "yh75",
+        "comments": [{
+            "commentId": "yh753",
+            "author": "yh75",
+            "body": "Don't you all love mongoDB?",
+            "date": 3
+        }]
+    },
+
+    {
+        "text": "post3: I love mongoDB",
+        "author": "yh75"
+    },
+
+    {
+        "text": "post4: I love mongoDB",
+        "author": "yh75"
+    },
+
+    {
+        "text": "post5: I love mongoDB",
+        "author": "yh75"
+    }
+
+]

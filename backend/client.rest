@@ -1,0 +1,153 @@
+GET http://localhost:3000/users
+
+###
+GET http://localhost:3000/loggedInUser
+
+###
+GET http://localhost:3000/all-profile
+
+###
+GET http://localhost:3000/cookie
+
+###
+GET http://localhost:3000/headline/yizhi
+
+###
+PUT http://localhost:3000/headline
+Content-Type: application/json
+
+{
+	"headline": "Happy"
+}
+
+###
+GET http://localhost:3000/email/
+
+###
+PUT http://localhost:3000/email
+Content-Type: application/json
+
+{
+	"email": "newEmail"
+}
+
+###
+GET http://localhost:3000/zipcode/
+
+###
+PUT http://localhost:3000/zipcode
+Content-Type: application/json
+
+{
+	"zipcode": "newZipCode"
+}
+
+###
+GET http://localhost:3000/dob/
+
+###
+GET http://localhost:3000/avatar/yizhi
+
+###
+PUT http://localhost:3000/avatar
+Content-Type: application/json
+
+{
+	"avatar": "http://content.sportslogos.net/logos/33/813/full/1843_rice_owls-secondary-2017.png"
+}
+
+###
+GET http://localhost:3000/articles/
+
+###
+POST http://localhost:3000/articles
+Content-Type: application/json
+
+{
+	"text": "I love mongoDB"	
+}
+
+###
+PUT http://localhost:3000/articles/1
+Content-Type: application/json
+
+{
+	"text": "Oh! I love MongoDB!!!",
+	"commentId": "-1"
+}
+###
+GET http://localhost:3000/following/
+
+###
+PUT http://localhost:3000/following/yizhi
+
+###
+DELETE http://localhost:3000/following/whatever
+
+
+###
+PUT http://localhost:3000/password
+Content-Type: application/json
+
+{
+	"password": "newPassword"
+}
+###
+POST http://localhost:3000/register
+Content-Type: application/json
+
+{
+	"username": "yizhi",
+  	"email": "yh75@rice.edu",
+  	"dob": "08/31/1996",
+  	"zipcode": "77005",
+  	"password": "123"
+}
+
+###
+// correct login
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+	"username": "yh75",
+  	"password": "123"
+}
+
+###
+// correct login
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+	"username": "yizhi",
+  	"password": "123"
+}
+
+###
+// incorrect login: username
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+	"username": "yizhi123",
+  	"password": "123456"
+}
+
+###
+// incorrect login: password
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+	"username": "yizhi",
+  	"password": "12345"
+}
+
+###
+PUT http://localhost:3000/logout
+
+###
+DELETE http://localhost:3000/clearDB
+
+###
